@@ -70,23 +70,9 @@ window.onload = function() {
       )
     ) {
       document.getElementById("errortarjetas").style.display = "block";
-    } else {
-      document.getElementById("errortarjetas").style.display = "none";
-    }
-    if (
-      card.value === "" ||
-      zip.value === "" ||
-      amount.value === "" ||
-      ccv.value === "" ||
-      !(
-        document.getElementById("Master").checked ||
-        document.getElementById("Visa").checked ||
-        document.getElementById("Paypal").checked ||
-        document.getElementById("Dinners").checked
-      )
-    ) {
       document.getElementById("Errorheader").style.display = "block";
     } else {
+      document.getElementById("errortarjetas").style.display = "none";
       document.getElementById("Errorheader").style.display = "none";
     }
   }
